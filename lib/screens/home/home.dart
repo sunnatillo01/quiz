@@ -52,6 +52,7 @@ class _HomePageState extends State<HomePage> {
                        child: const Image(
                 image: AssetImage(
                   "assets/images/4.jpg",
+                  
                 ),
               ),
                      ),
@@ -132,6 +133,34 @@ class _HomePageState extends State<HomePage> {
            Container(
             child: const Text('Quiz Category',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),),
            ),
+           GridView.count(
+            mainAxisSpacing: 5,
+            crossAxisSpacing: 5,
+            crossAxisCount: 3,
+            children: [
+              Container(
+                width: 136.0,
+                height: 152.0,
+                color: const Color(0xFFC2E0F4),
+              ),
+              Container(
+                width: 136.0,
+                height: 152.0,
+                color: const Color(0xFFC2E0F4),
+              ),
+              Container(
+                width: 136.0,
+                height: 152.0,
+                color: const Color(0xFFC2E0F4),
+              ),
+              Container(
+                width: 136.0,
+                height: 152.0,
+                color: const Color(0xFFC2E0F4),
+              ),
+            ],
+            
+            ),
           ],
         ),
       ),
