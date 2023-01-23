@@ -131,95 +131,154 @@ class _HomePageState extends State<HomePage> {
                ),
              ],
            ),
-
-            const  SizedBox(height: 10.0),
+           const SizedBox(height: 10),
            Container(
             child: const Text('Quiz Category',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),),
            ),
-
-           const  SizedBox(height: 20.0),
-           GridView.count(
-            scrollDirection: Axis.horizontal,
-            
-            mainAxisSpacing: 3,
-            crossAxisSpacing: 3,
-            crossAxisCount: 3,
-            children: [
-
-              Container(
-                width: 136.0,
-                height: 152.0,
-                color: const Color(0xFF3498DB),
-                     child: const Image(
+            const SizedBox(height: 20),
+           Row(
+             children: [
+               Padding(
+                 padding: const EdgeInsets.all(6.0),
+                 child: Column(
+                   children: [
+                     Container(
+                      width: 136.0,
+                        height: 152.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color(0xFF3498DB),
+                      ),
+                       child: const Image(
                 image: AssetImage(
-                  "assets/images/3.jpg",
-                  
+                  "assets/images/4.jpg",         
                 ),
               ),
-              ),
+                     ),
+                    
+                   ],
+                 ),
+               ),
 
-              Container(
-                width: 136.0,
-                height: 152.0,
-                color: const Color(0xFF9B59B6),
-                     child: const Image(
+               Padding(
+                 padding: const EdgeInsets.all(6.0),
+                 child: Column(
+                   children: [
+                     Container(
+                       width: 136.0,
+                        height: 152.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color(0xFF9B59B6),
+                      ),
+                       child: const Image(
                 image: AssetImage(
                   "assets/images/4.jpg",
-                  
                 ),
               ),
-              ),
+                     ),
+                    
+                   ],
+                 ),
+               ),
 
-              Container(
-                width: 136.0,
-                height: 152.0,
-                color: const Color(0xFF3498DB),
-                     child: const Image(
+               Padding(
+                 padding: const EdgeInsets.all(6.0),
+                 child: Column(
+                   children: [
+                     Container(
+                      width: 136.0,
+                      height: 152.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color(0xFF3498DB),
+                      ),
+                       child: const Image(
                 image: AssetImage(
                   "assets/images/5.jpg",
-                  
                 ),
               ),
-              ),
-
-              Container(
-                width: 136.0,
-                height: 152.0,
-                color: const Color(0xFF9B59B6),
-                     child: const Image(
+                     ),
+                 
+                   ],
+                 ),
+               ),
+             ],
+           ),
+            const SizedBox(height: 10),
+           Row(
+             children: [
+               Padding(
+                 padding: const EdgeInsets.all(6.0),
+                 child: Column(
+                   children: [
+                     Container(
+                      width: 136.0,
+                      height: 152.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color(0xFF9B59B6),
+                      ),
+                       child: const Image(
                 image: AssetImage(
-                  "assets/images/6.jpg",
-                  
+                  "assets/images/4.jpg",         
                 ),
               ),
-              ),
+                     ),
+                    
+                   ],
+                 ),
+               ),
 
-               Container(
-                width: 136.0,
-                height: 152.0,
-                color: const Color(0xFF3498DB),
-                     child: const Image(
-                image: AssetImage(
-                  "assets/images/3.jpg",
-                  
-                ),
-              ),
-              ),
-
-               Container(
-                width: 136.0,
-                height: 152.0,
-                color: const Color(0xFF9B59B6),
-                     child: const Image(
+               Padding(
+                 padding: const EdgeInsets.all(6.0),
+                 child: Column(
+                   children: [
+                     Container(
+                       width: 136.0,
+                       height: 152.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color(0xFF3498DB),
+                      ),
+                       child: const Image(
                 image: AssetImage(
                   "assets/images/4.jpg",
-                  
                 ),
               ),
+                     ),
+                     
+                   ],
+                 ),
+               ),
+
+               Padding(
+                 padding: const EdgeInsets.all(6.0),
+                 child: Column(
+                   children: [
+                     Container(
+                       width: 136.0,
+                       height: 152.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color(0xFF9B59B6),
+                      ),
+                       child: const Image(
+                image: AssetImage(
+                  "assets/images/5.jpg",
+                ),
               ),
-            ],
+                     ),
+                    
+                   ],
+                 ),
+               ),
+             ],
+           ),
+
             
-            ),
+
+          
           ],
         ),
       ),

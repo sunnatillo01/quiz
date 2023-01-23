@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz/screens/auth/signup.dart';
 
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -27,12 +26,18 @@ class _SplashScreenState extends State<SplashScreen> {
               });
             },
             children: [
-              splashScreen('assets/images/1.jpg', 'Quiz',
-                  'For professional documents, it is important to keep consistent typography. At the same time, documents that contain many text elements (e.g. reports) may become troublesome to configure, even with techniques such as global text styles or DSL extensions (creating more complex structures defined as C# extension methods).'),
-              splashScreen('assets/images/1.jpg', 'Quiz',
-                  'For professional documents, it is important to keep consistent typography. At the same time, documents that contain many text elements (e.g. reports) may become troublesome to configure, even with techniques such as global text styles or DSL extensions (creating more complex structures defined as C# extension methods).'),
-              splashScreen('assets/images/1.jpg', 'Quiz',
-                  'For professional documents, it is important to keep consistent typography. At the same time, documents that contain many text elements (e.g. reports) may become troublesome to configure, even with techniques such as global text styles or DSL extensions (creating more complex structures defined as C# extension methods).'),
+              splashScreen(
+                'assets/images/11.jpg',
+                'Tezkor Ilova',
+                'Ilova siz o`ylagandek tezkor va ixcham',
+              ),
+              splashScreen('assets/images/7.jpg', 'Qiziqarli savollar',
+                  'Ilovada siz kutgan qiziqarli savollar mavjud'),
+              splashScreen(
+                'assets/images/8.jpg',
+                'IQ level',
+                'Savollar sizning IQ darajngizga tasir qiladi',
+              ),
             ],
           ),
           currentIndex == _numPage
@@ -144,9 +149,34 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(img),
-          Text(title),
-          Text(subtitle),
+          Padding(
+            padding: const EdgeInsets.all(30.0),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20.0),
+                color: Colors.white,
+              ),
+              width: 350.0,
+              height: 350.0,
+              child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20.0),
+                  child: Image.asset(
+                    img,
+                  )),
+            ),
+          ),
+          const SizedBox(height: 12.0),
+          Text(
+            title,
+            style: const TextStyle(
+                color: Colors.white, fontSize: 30, fontWeight: FontWeight.w700),
+          ),
+          SizedBox(height: 15.0),
+          Text(
+            subtitle,
+            style: const TextStyle(
+                color: Colors.white, fontSize: 20, fontWeight: FontWeight.w400),
+          ),
         ],
       ),
     );

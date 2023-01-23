@@ -52,10 +52,10 @@ class AppBottomNavigationBar extends StatelessWidget {
       case 0:
         return 'Home';
       case 1:
-        return 'Profile';
+        return 'Service';
 
       default:
-        return 'home';
+        return 'Profile';
     }
   }
 
