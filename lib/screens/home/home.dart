@@ -10,8 +10,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  double w = 200;
-  double h = 200;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +20,7 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+
             Container(
               height: 148.0,
               width: 266.0,
@@ -31,6 +30,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+
            const  SizedBox(height: 10),
            Container(
             child: const Text('Menu',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),),
@@ -51,8 +51,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                        child: const Image(
                 image: AssetImage(
-                  "assets/images/4.jpg",
-                  
+                  "assets/images/4.jpg",         
                 ),
               ),
                      ),
@@ -61,6 +60,7 @@ class _HomePageState extends State<HomePage> {
                    ],
                  ),
                ),
+
                Padding(
                  padding: const EdgeInsets.all(6.0),
                  child: Column(
@@ -83,6 +83,7 @@ class _HomePageState extends State<HomePage> {
                    ],
                  ),
                ),
+
                Padding(
                  padding: const EdgeInsets.all(6.0),
                  child: Column(
@@ -105,6 +106,7 @@ class _HomePageState extends State<HomePage> {
                    ],
                  ),
                ),
+
                Padding(
                  padding: const EdgeInsets.all(6.0),
                  child: Column(
@@ -129,34 +131,91 @@ class _HomePageState extends State<HomePage> {
                ),
              ],
            ),
+
             const  SizedBox(height: 10.0),
            Container(
             child: const Text('Quiz Category',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),),
            ),
+
+           const  SizedBox(height: 20.0),
            GridView.count(
-            mainAxisSpacing: 5,
-            crossAxisSpacing: 5,
+            scrollDirection: Axis.horizontal,
+            
+            mainAxisSpacing: 3,
+            crossAxisSpacing: 3,
             crossAxisCount: 3,
             children: [
+
               Container(
                 width: 136.0,
                 height: 152.0,
-                color: const Color(0xFFC2E0F4),
+                color: const Color(0xFF3498DB),
+                     child: const Image(
+                image: AssetImage(
+                  "assets/images/3.jpg",
+                  
+                ),
               ),
-              Container(
-                width: 136.0,
-                height: 152.0,
-                color: const Color(0xFFC2E0F4),
               ),
+
               Container(
                 width: 136.0,
                 height: 152.0,
-                color: const Color(0xFFC2E0F4),
+                color: const Color(0xFF9B59B6),
+                     child: const Image(
+                image: AssetImage(
+                  "assets/images/4.jpg",
+                  
+                ),
               ),
+              ),
+
               Container(
                 width: 136.0,
                 height: 152.0,
-                color: const Color(0xFFC2E0F4),
+                color: const Color(0xFF3498DB),
+                     child: const Image(
+                image: AssetImage(
+                  "assets/images/5.jpg",
+                  
+                ),
+              ),
+              ),
+
+              Container(
+                width: 136.0,
+                height: 152.0,
+                color: const Color(0xFF9B59B6),
+                     child: const Image(
+                image: AssetImage(
+                  "assets/images/6.jpg",
+                  
+                ),
+              ),
+              ),
+
+               Container(
+                width: 136.0,
+                height: 152.0,
+                color: const Color(0xFF3498DB),
+                     child: const Image(
+                image: AssetImage(
+                  "assets/images/3.jpg",
+                  
+                ),
+              ),
+              ),
+
+               Container(
+                width: 136.0,
+                height: 152.0,
+                color: const Color(0xFF9B59B6),
+                     child: const Image(
+                image: AssetImage(
+                  "assets/images/4.jpg",
+                  
+                ),
+              ),
               ),
             ],
             
