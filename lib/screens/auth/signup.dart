@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:quiz/screens/home/home.dart';
 
 import '../home/home_screen.dart';
 
@@ -16,6 +15,8 @@ class _SecondPageState extends State<SecondPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Colors.white,
       body: Stack(
         alignment: Alignment.bottomCenter,
         children: [
@@ -46,11 +47,14 @@ class _SecondPageState extends State<SecondPage> {
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
                         child: TextField(
                           decoration: const InputDecoration(
                               hintText: "Name",
-                              hintStyle: TextStyle(color: Colors.white),
+                              hintStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w500),
                               enabledBorder: InputBorder.none,
                               focusedBorder: InputBorder.none),
                           controller: _controller2,
@@ -69,11 +73,14 @@ class _SecondPageState extends State<SecondPage> {
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
                         child: TextField(
                           decoration: const InputDecoration(
                             hintText: "Username",
-                            hintStyle: TextStyle(color: Colors.white),
+                            hintStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w500),
                             enabledBorder: InputBorder.none,
                             focusedBorder: InputBorder.none,
                           ),
@@ -93,11 +100,14 @@ class _SecondPageState extends State<SecondPage> {
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
                         child: TextField(
                           decoration: const InputDecoration(
                               hintText: "Password",
-                              hintStyle: TextStyle(color: Colors.white),
+                              hintStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w500),
                               enabledBorder: InputBorder.none,
                               focusedBorder: InputBorder.none),
                           controller: _controller2,
@@ -140,8 +150,11 @@ class _SecondPageState extends State<SecondPage> {
             ),
           ),
           const SizedBox(
-              height: 200.0,
-              child: Image(image: AssetImage('assets/images/1.jpg')))
+            height: 200.0,
+            child: Image(
+              image: AssetImage('assets/images/13.jpg'),
+            ),
+          ),
         ],
       ),
     );

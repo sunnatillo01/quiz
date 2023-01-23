@@ -15,8 +15,8 @@ class AppBottomNavigationBar extends StatelessWidget {
           currentIndex: state,
           unselectedLabelStyle:
               const TextStyle(color: Colors.black, fontSize: 14),
-          selectedLabelStyle: TextStyle(color: Colors.blue),
-          fixedColor: Colors.black,
+          selectedLabelStyle: const TextStyle(color: Color(0xff1B56A2)),
+          fixedColor: const Color(0xff1B56A2),
           items: List.generate(3, (index) => _setItem(index)),
           onTap: (i) {
             BottomNavigationBarBloc barBloc = BlocProvider.of(context);
@@ -30,7 +30,7 @@ class AppBottomNavigationBar extends StatelessWidget {
   BottomNavigationBarItem _setItem(int index) => BottomNavigationBarItem(
         icon: Icon(
           _getIcon(index),
-          color: Colors.blue,
+          color: Color(0xff1B56A2),
         ),
         label: _getLabel(index),
       );
